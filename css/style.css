@@ -5,9 +5,7 @@ body{
 a{
     text-decoration: none;
 }
-*{
-    margin:0;
-}
+*{}
 header{
     margin:0;
     height:80px;
@@ -97,7 +95,6 @@ p{
 }
 
 .box-1{
-    
     padding: 56px 24px;
     background: linear-gradient(322deg,rgba(45, 0, 224, 1) 0%, rgba(232, 232, 255, 1) 15%);
     max-width: 1070px;
@@ -105,7 +102,7 @@ p{
     margin: 24px 0;
     margin-right: auto;
     margin-left: auto;
-  
+    
 }
 
 .box-2{

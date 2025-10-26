@@ -1,1 +1,120 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+body{
+    background-color: #F8F8FF;
+    
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin:0;
+}
+header{
+    margin:0;
+    height:80px;
+    width:100%;
+    background: linear-gradient(290deg,rgba(44, 19, 189, 1) 0%, rgba(0, 1, 74, 1) 100%);
+
+}
+
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    padding:12.5px 10%;
+    justify-content: space-between;
+    font-family:helvetica, sans-serif;
+    font-weight:bold;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    
+    
+
+}
+
+nav ul li a{
+    color:white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: #0B0035;
+
+}
+
+
+
+.button-orange{
+    background-color:#FF7900;
+    padding: 10px 40px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: black 3px solid;
+    border-radius: 5px;
+}
+.button-orange:hover{
+    background-color:#74D02C;
+    cursor: pointer;
+}
+
+.button-green{
+    background-color:#74D02C;
+    padding: 10px 40px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: black 3px solid;
+    border-radius: 5px;
+}
+.button-green:hover{
+    background-color:#FF7900;
+    cursor: pointer;
+}
+
+h1{
+    font-family: helvetica, "Alata", "Consolas", sans-serif;
+    font-size: 56px;
+
+}
+
+
+h2{
+    font-family: helvetica, "Alata", "Consolas", sans-serif;
+    font-size: 32px; 
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family:"Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.box-1{
+    
+    padding: 56px 24px;
+    background: linear-gradient(322deg,rgba(45, 0, 224, 1) 0%, rgba(232, 232, 255, 1) 15%);
+    max-width: 1070px;
+    border-radius: 5px;
+    margin: 24px 0;
+    margin-right: auto;
+    margin-left: auto;
+  
+}
+
+.box-2{
+    padding: 56px 24px;
+    background: linear-gradient(41deg,rgba(45, 0, 224, 1) 0%, rgba(232, 232, 255, 1) 15%);
+    max-width: 1070px;
+    border-radius: 5px;
+    margin: 56px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+

@@ -5,12 +5,14 @@ body{
 a{
     text-decoration: none;
 }
-*{}
+
 header{
     margin:0;
     height:80px;
     width:100%;
     background: linear-gradient(290deg,rgba(44, 19, 189, 1) 0%, rgba(0, 1, 74, 1) 100%);
+    position:fixed;
+    top:0;
 
 }
 
@@ -29,8 +31,6 @@ nav{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    
-    
 
 }
 
@@ -52,7 +52,7 @@ nav ul li a:hover{
     padding: 10px 40px;
     font-family: helvetica, sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     border: black 3px solid;
     border-radius: 5px;
 }
@@ -66,7 +66,7 @@ nav ul li a:hover{
     padding: 10px 40px;
     font-family: helvetica, sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     border: black 3px solid;
     border-radius: 5px;
 }
@@ -75,23 +75,36 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-h1{
+h1,h2,h3,h4, figcaption{
     font-family: helvetica, "Alata", "Consolas", sans-serif;
-    font-size: 56px;
+}
 
+h1{
+    font-size: 3.5rem;
 }
 
 
 h2{
-    font-family: helvetica, "Alata", "Consolas", sans-serif;
-    font-size: 32px; 
+    font-size: 2rem; 
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
+}
+h3{
+    font-size: 2rem; 
+    padding: 0 0 0 0;
+    margin: 0 10%;
+}
+
+h4{
+    font-size: 1rem;
 }
 
 p{
     font-family:"Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    line-height: 1.5rem;
+    
 }
 
 .box-1{
@@ -99,11 +112,10 @@ p{
     background: linear-gradient(322deg,rgba(45, 0, 224, 1) 0%, rgba(232, 232, 255, 1) 15%);
     max-width: 1070px;
     border-radius: 5px;
-    margin: 24px 0;
-    margin-right: auto;
-    margin-left: auto;
-    
+    margin: 24px auto;
 }
+
+
 
 .box-2{
     padding: 56px 24px;
@@ -115,3 +127,84 @@ p{
     margin-left: auto;
 }
 
+
+
+.hero{
+    text-align:center;
+    max-width: 1070px;
+    margin-top: 7rem;
+    margin-left:auto;
+    margin-right:auto;
+    position:static;
+}
+
+.call-to-action{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.call-to-action h3{
+   word-spacing: 0.7rem;
+   margin:0 4rem;
+}
+
+/*This makes the aside float on the right side of the page */
+aside{
+    margin-left:25px;
+    float:right;
+    background-color:rgb(10, 255, 2);
+    padding: 10px;
+    border-radius: 5px;
+    text-indent: 0.5rem;
+    border-color:#0B0035;
+    border-style:double;
+    border-width: 0 0 0 1rem;
+}
+
+
+
+footer p{
+    text-align:center;
+}
+
+.stores{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stores button{
+    margin: 0 5rem;
+}
+
+.cookies{
+    position:fixed;
+    bottom:5rem;
+    text-align:center;
+    left:5rem;
+    background-color: #FF7900;
+    padding: 1rem 0.1rem;
+    z-index: 9999;
+    border-radius: 5px;
+    border: 5px #1b0086 solid;
+
+}
+
+.cookies > h4{
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+figcaption{
+    font-size: 1.2rem;
+    position:relative;
+    left:25%;
+}
+
+.explainer{
+    width: 50%;
+    position:relative;
+    left:25%;
+}

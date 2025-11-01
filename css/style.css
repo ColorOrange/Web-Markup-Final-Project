@@ -163,11 +163,13 @@ p{
     align-items: center;
     justify-content: center;
     
+    
 }
 
 .call-to-action h3{
-   word-spacing: 0.7rem;
+   word-spacing: 0.4rem;
    margin:0 4rem;
+   font-size: 1.5rem;
 }
 
 /*This makes the aside float on the right side of the page */

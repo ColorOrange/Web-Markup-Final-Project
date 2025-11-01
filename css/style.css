@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 body{
     background-color: #F8F8FF;
     
@@ -8,12 +11,11 @@ a{
 
 header{
     margin:0;
-    height:80px;
     width:100%;
     background: linear-gradient(290deg,rgba(44, 19, 189, 1) 0%, rgba(0, 1, 74, 1) 100%);
     position:fixed;
     top:0;
-
+    z-index:999;
 }
 
 
@@ -28,21 +30,37 @@ nav{
     font-weight:bold;
 }
 
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-
+nav ul {
+    width:100%;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
 
-nav ul li a{
-    color:white;
-    padding: 10px 15px;
-    border-radius: 5px;
+nav li {
+    height:50px;
+    
+}
+nav ul a{
+    height:100%;
+    padding: 0 1vw;
+    text-decoration: none;
+    color: white;
+    display:flex;
+    align-items:center;
 }
 
-nav ul li a:hover{
+nav ul a:hover{
     background-color: #0B0035;
+    border-radius: 5px;
 
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
 }
 
 
@@ -50,6 +68,7 @@ nav ul li a:hover{
 .button-orange{
     background-color:#FF7900;
     padding: 10px 40px;
+    color:black;
     font-family: helvetica, sans-serif;
     font-weight: bold;
     font-size: 1rem;
@@ -63,6 +82,7 @@ nav ul li a:hover{
 
 .button-green{
     background-color:#74D02C;
+    color:black;
     padding: 10px 40px;
     font-family: helvetica, sans-serif;
     font-weight: bold;
@@ -75,7 +95,7 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-h1,h2,h3,h4, figcaption{
+h1,h2,h3,h4, figcaption, .links, table, legend, form{
     font-family: helvetica, "Alata", "Consolas", sans-serif;
 }
 
@@ -132,7 +152,7 @@ p{
 .hero{
     text-align:center;
     max-width: 1070px;
-    margin-top: 7rem;
+    margin-top: 9rem;
     margin-left:auto;
     margin-right:auto;
     position:static;
@@ -151,7 +171,7 @@ p{
 }
 
 /*This makes the aside float on the right side of the page */
-aside{
+.asidestyle{
     margin-left:25px;
     float:right;
     background-color:rgb(10, 255, 2);
@@ -173,28 +193,44 @@ footer p{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
-.stores button{
-    margin: 0 5rem;
+.stores a{
+    margin: 0 2rem;
+}
+.stores h3{
+    text-align: center;
+    margin:0;
+    font-size:1.5rem;
 }
 
 .cookies{
-    position:fixed;
-    bottom:5rem;
     text-align:center;
-    left:5rem;
+    left:1vw;
     background-color: #FF7900;
     padding: 1rem 0.1rem;
     z-index: 9999;
     border-radius: 5px;
     border: 5px #1b0086 solid;
-
+    max-width: 1100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .cookies > h4{
-    padding: 1rem;
+    padding: 0.5rem;
     text-transform: uppercase;
+}
+
+.cookies > h4::first-letter{
+    font-size: 2rem;
+}
+
+.cookies p{
+    font-size: 1rem;
+    padding:0;
+
 }
 
 figcaption{
@@ -207,4 +243,94 @@ figcaption{
     width: 50%;
     position:relative;
     left:25%;
+}
+
+.links{
+    font-size: 2rem;
+    color:rgb(10, 255, 2);
+    background-color:#0B0035;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.links:hover{
+    color:#FF7900;
+}
+
+.links:visited{
+    color:rgb(255, 0, 204);
+}
+
+.links:link{
+    background-color:#1b0086;
+}
+
+.links:active{
+    background-color:#2100a7;
+    color:#FF7900;
+}
+
+@media(max-width: 768px){
+    .hideonmobile{
+        display:none;
+    }
+
+}
+@media(min-width: 768px){
+    .hideondesktop{
+        display:none;
+    }
+}
+
+table{
+    margin:25px 20px;
+    text-align:left;
+    font-size:1.5rem;
+    min-width:400px;
+    border: 5px solid black;
+    border-radius: 5px;
+    
+}
+table tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+table tr:nth-child(even) {
+    background-color: #CFF;
+}
+form{
+    width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+}
+fieldset{
+    margin: 2rem 10%;
+    padding: 1rem 2rem;
+    border: 5px double #000000;
+    border-radius: 5px;
+    background-color:#efebff;
+}
+
+fieldset legend{
+    font-size:2rem;
+}
+
+label, button{
+    display:block;
+    margin-top:1rem;
+    margin-bottom:0.3rem;
+}
+
+
+input, textarea{
+    padding: 0.5rem;
+    border:#0B0035 2px solid;
+    min-width: 25vw;
+}
+
+textarea{
+    min-height: 5rem;
+    min-width: 25vw;
+    padding: .5rem;
+    
 }
